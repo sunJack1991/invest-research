@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "task_type": null,
+  "target": {
+    "name_or_code": null,
+    "market": null,
+    "instrument_type": null
+  },
+  "question": null,
+  "report_input": {
+    "path": null,
+    "text": null
+  },
+  "scope": "general_research",
+  "intended_action": null,
+  "as_of": null,
+  "depth": "auto",
+  "user_context": {
+    "ips_ref": null,
+    "funds_and_uses": null,
+    "holdings_and_exposures": null,
+    "tax_account_constraints": null
+  },
+  "optional_context": {
+    "focus_questions": [],
+    "holding_horizon": null,
+    "benchmark": null,
+    "user_sources": [],
+    "assumptions": []
+  },
+  "output": {
+    "language": "zh-CN",
+    "reports": [],
+    "formats": [
+      "markdown"
+    ],
+    "write_files": false,
+    "directory": null
+  }
+}

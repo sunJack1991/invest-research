@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "format": "Agent Skills",
+  "name": "invest-research",
+  "version": "0.1.0",
+  "entrypoint": "SKILL.md",
+  "git_commit": null,
+  "runtime": "instructions-and-text-assets; no required API or SDK; optional Python 3 offline integrity check",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 5635,
+      "sha256": "a00ce537a86205c065c143dd58b81243509c180f87eb2896781cf624a8a15648"
+    },
+    {
+      "path": "assets/decision.md",
+      "bytes": 9005,
+      "sha256": "07eea21deb4ae47dfa00df4edd81ac4ce3eb7a02f7068723237acbf2ba12c28a"
+    },
+    {
+      "path": "assets/ips.md",
+      "bytes": 3340,
+      "sha256": "a9c45b277e2aaf6b9bd3ddde164d2a03c9c4ee67107ed2492331e0ed3a2f3c7d"
+    },
+    {
+      "path": "assets/request.json",
+      "bytes": 766,
+      "sha256": "cc1be600e0e103835e2a48a9dbc5e5d2b7b814c2e6ba47ea6d763af9f874a70f"
+    },
+    {
+      "path": "assets/run.json",
+      "bytes": 1813,
+      "sha256": "5269a9e258000b4272d52e3d5abeedff5c13209e6c20fc182b04ae11c3be2944"
+    },
+    {
+      "path": "assets/summary.md",
+      "bytes": 2304,
+      "sha256": "6d409aa1b97cba3e8c4cb822e1ed2ed399f8bfa1812cc57eae38c0aeca185cf5"
+    },
+    {
+      "path": "references/checklists.md",
+      "bytes": 10017,
+      "sha256": "b1a44a3928746b5a23e79094fc801779f4221a357f466e5d500af8cc4ff1a8c4"
+    },
+    {
+      "path": "references/input-output.md",
+      "bytes": 9513,
+      "sha256": "8cae49cca12551c84bc32b603be5aaaa6ca4d275052044fa8cf5dabb81e1191a"
+    },
+    {
+      "path": "references/method.md",
+      "bytes": 9861,
+      "sha256": "2cb9dc53bbe6b43c7ddabfd006de64b9c2619a81baf855fdf3179b452e23775f"
+    },
+    {
+      "path": "references/policy.md",
+      "bytes": 3088,
+      "sha256": "c415dba30dc3465a06310cc4d3bedb92593933027416d81f4acb0b00e166e919"
+    },
+    {
+      "path": "references/sources.md",
+      "bytes": 3299,
+      "sha256": "a6c08c7bfdb1b80e342bbc8b74652e57be3e2d34bd8d420f96560f31e010d6c8"
+    },
+    {
+      "path": "scripts/check_integrity.py",
+      "bytes": 1962,
+      "sha256": "9c3fd336c3f65b64c68345a4d9287cbbb5a4424ae775646cf4e0d7179eaa69d1"
+    }
+  ]
+}

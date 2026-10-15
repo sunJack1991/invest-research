@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "run_id": null,
+  "started_at": null,
+  "framework": {
+    "content_version": null,
+    "git_commit": null,
+    "resource_manifest_sha256": null,
+    "resources_used": []
+  },
+  "user_policy": {
+    "path": null,
+    "version": null,
+    "sha256": null,
+    "status": "未确认"
+  },
+  "target": {
+    "name": null,
+    "security_type": null,
+    "market": null
+  },
+  "data_cutoff": null,
+  "base_currency": null,
+  "book_references": [],
+  "user_extensions": [],
+  "evidence": [],
+  "critical_unknowns": [],
+  "gates": {
+    "G1": {
+      "status": "待查",
+      "evidence": [],
+      "unknowns": []
+    },
+    "G2": {
+      "status": "待查",
+      "evidence": [],
+      "unknowns": []
+    },
+    "G3": {
+      "status": "待查",
+      "evidence": [],
+      "unknowns": []
+    },
+    "G4": {
+      "status": "待查",
+      "evidence": [],
+      "unknowns": []
+    },
+    "G5": {
+      "status": "待查",
+      "evidence": [],
+      "unknowns": []
+    }
+  },
+  "decision": {
+    "action": null,
+    "reason": null,
+    "research_only": true
+  },
+  "execution_authorization": {
+    "status": "未提供",
+    "scope": null,
+    "authorized_by": null,
+    "authorized_at": null
+  },
+  "outputs": [],
+  "usage_note": "在用户独立工作区填写。仅记录来源和状态，不替代完整A–M决策底稿；空列表不表示不存在风险、已完成核验或获准交易。",
+  "request_ref": null,
+  "task_type": null,
+  "scope": "general_research",
+  "input_readiness": {
+    "missing_to_start": [],
+    "missing_for_personalization": [],
+    "unverified_facts": []
+  },
+  "delivery": {
+    "summary_displayed": false,
+    "requested_reports": [],
+    "delivered_reports": [],
+    "undelivered_reasons": [],
+    "write_files": false,
+    "output_directory": null
+  }
+}
