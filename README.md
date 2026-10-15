@@ -6,7 +6,7 @@
 
 ## 安装
 
-下载 [0.1.0 技能 ZIP](dist/invest-research-0.1.0.zip?raw=true)，在支持本地技能导入的客户端中导入；若客户端要求目录，解压后选择含 `SKILL.md` 的完整 `invest-research` 目录。
+下载 [0.1.0 技能 ZIP](https://github.com/sunJack1991/invest-research/raw/c861c52487629a8a972e89402c153c83320c2f76/dist/invest-research-0.1.0.zip)，在支持本地技能导入的客户端中导入；若客户端要求目录，解压后选择含 `SKILL.md` 的完整 `invest-research` 目录。
 
 也可以克隆仓库：
 
