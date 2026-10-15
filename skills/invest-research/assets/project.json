@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "base": {
+    "skill_version": null,
+    "skill_commit": null,
+    "resource_repository": null,
+    "resource_version": null,
+    "resource_commit": null,
+    "resource_manifest_sha256": null,
+    "mode": null,
+    "local_library": null
+  },
+  "user_policy": {"path": null, "version": null, "sha256": null, "confirmed": false},
+  "custom_sources": [],
+  "reports": [],
+  "note": "仅在用户工作区填写；来源实际取得、读取范围与核验状态分别登记。"
+}

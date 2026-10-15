@@ -1,48 +1,53 @@
 # invest-research
 
-用于港美股公司、股票与 ETF 研究、投资报告复核和方法解释的开放 Agent Skills 包。当前版本 **0.1.0**。
+开放Agent Skills投资研究技能，当前版本 **0.2.0**。研究港美股公司、股票与ETF，复核报告、解释方法。采用SKILL.md、相对引用、普通文本及可选标准库脚本，无厂商私有API、SDK、连接器或特定模型依赖，不执行交易。
 
-采用 `SKILL.md`、相对引用、普通 Markdown/JSON 与可选离线脚本，不依赖厂商私有 API、SDK、连接器或特定模型。研究资料由宿主 Agent 实际具备的读取与检索能力提供。本技能不执行交易。
+## 两种安装
 
-## 安装
+| 安装包 | 包含内容 | 获取方式 |
+|---|---|---|
+| [完整包](https://raw.githubusercontent.com/sunJack1991/invest-research/main/dist/invest-research-0.2.0-complete.zip) | 核心技能和完整公共快照，共525文件 | 可离线读取公共资料 |
+| [按需包](https://raw.githubusercontent.com/sunJack1991/invest-research/main/dist/invest-research-0.2.0.zip) | 核心技能、目录和资源锁，共19文件 | 按需经宿主HTTPS/Git读取并核指纹 |
 
-下载 [0.1.0 技能 ZIP](https://github.com/sunJack1991/invest-research/raw/c861c52487629a8a972e89402c153c83320c2f76/dist/invest-research-0.1.0.zip)，在支持本地技能导入的客户端中导入；若客户端要求目录，解压后选择含 `SKILL.md` 的完整 `invest-research` 目录。
+两种包锁定同一[公共资源库](https://github.com/sunJack1991/invest-resources)版本0.1.0，commit `8464b992128502bb88a1d6f393ee0e58381625c1`。公共库含250章笔记、112批次及复算、阅读进度、疑点核验、详细方法和纯历史节号映射，共506文件/495项资料。
 
-也可以克隆仓库：
+下载解压后，导入含SKILL.md的完整invest-research目录，不要只复制入口。克隆本仓库后安装skills/invest-research目录，相当于按需模式；完整包比该目录多出resources/library。不要同时安装同名两份。
 
-```sh
-git clone https://github.com/sunJack1991/invest-research.git
-```
+WorkBuddy按其[本地技能导入机制](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market)加载；支持项目技能目录时可放入使用者项目的.codebuddy/skills。其他Agent按公开的技能发现规则加载。已做格式及包级验证，尚未完成实际客户端导入和模型行为实测。
 
-实际技能位于 `skills/invest-research/`。请按客户端的技能发现规则复制整个目录，不要只复制 `SKILL.md`，也不要把整个仓库当作技能目录。
-
-WorkBuddy 可按其[技能导入说明](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market)导入本地包；支持项目技能目录的场景可将完整技能目录放入使用者项目的 `.codebuddy/skills/`。其他 Agent 按其公开的技能导入机制加载。已核对格式及公开文档，尚未进行 WorkBuddy 实际导入和模型行为测试。
+完整包离线能力指公共资料读取；最新财报、行情等仍需用户提供或宿主实际取得。按需模式无网络且无本地快照时，列出具体缺口，不冒充已完成专题研究。
 
 ## 使用
 
-直接用自然语言提出请求，无需填写 JSON：
+自然语言即可，不要求手填JSON：
 
-- “研究某公司（证券代码、上市市场），给我关键结论。”
-- “复核这份报告，列出重大错误和证据缺口。”并提供可读取报告。
-- “解释 DCF 和剩余收益模型分别适合什么情况。”
-- “研究某只 ETF，附完整研究报告和证据附录。”
+- “研究某公司（代码、市场），给我关键结论。”
+- “复核这份报告，指出重大问题。”并提供可读原文。
+- “解释DCF和剩余收益模型的适用条件。”
+- “研究这只ETF，附完整报告及估值附录。”
 
-通用研究只需能唯一定位的标的；报告复核需可读原文；方法解释需具体问题。个人适配才需要使用者自己的 IPS、资金用途、期限、持仓和相关实施约束。缺个人资料仍可做通用研究，但不能推定个人可买额度或政策通过。
+通用研究只需唯一标的；复核需报告，解释需具体问题。个人适配才核使用者自己的IPS、用途、期限、资金、持仓及相关实施约束；缺个人资料仍可研究，不推定可买额度或政策通过。
 
-默认用简体中文在对话中显示核心判断、证据、估值或缺口、五门结论、反方风险和下一步。完整报告、估值附录、证据附录、决策记录及复核清单按需提供；默认不写文件。详见[输入输出约定](skills/invest-research/references/input-output.md)与[技能入口](skills/invest-research/SKILL.md)。
+默认简体中文、对话中展示必要结论、不写文件；完整报告、估值/证据附录、决策记录和复核清单按需提供。见[技能入口](skills/invest-research/SKILL.md)与[输入输出约定](skills/invest-research/references/input-output.md)。
 
-## 版本与资料保护
+## 个人IPS、独立报告与自有资料
 
-基础技能与个人工作区分开：个人 IPS、持仓、扩展书籍、数据和产出保存在使用者自己的目录。基础文件的只读权限由宿主或文件系统落实，提示词与哈希不提供写保护。
+在技能目录外建立[个人工作区](skills/invest-research/assets/project.md)，保存自己的IPS、书籍/笔记、数据、运行和报告。用[项目配置](skills/invest-research/assets/project.json)与[运行模板](skills/invest-research/assets/run.json)记录Skill版本/commit、资源commit、文件指纹及实际读取范围、个人政策版本和补充来源。
 
-安装后记录版本与实际 commit；升级时显式切换固定版本或 commit，不在每次研究时自动追随最新分支。保留旧版及个人资料。可选完整性核对（只需 Python 3 标准库，不联网、不写文件）：
+原书、解码全文、图像、维护者IPS/资产和独立报告不在公共库。历史政策只保留纯节号映射；书中案例数字不是用户资产或默认阈值。自有资料可增加证据与反证，不静默覆盖基础文件。只读保护由宿主权限落实。
+
+## 核对与升级
+
+[资源锁](skills/invest-research/resources.lock.json)固定真实commit及目录/manifest指纹，[目录](skills/invest-research/resources/catalog.json)提供按需路由。公共资源库可独立补书；旧安装、旧IPS及旧报告继续引用旧commit，不每次追随main。升级审阅差异后再切换，保留个人工作区。
+
+可选Python 3标准库工具，以技能目录为工作目录：
 
 ```sh
-python3 -B skills/invest-research/scripts/check_integrity.py
+python3 -B scripts/check_integrity.py
+python3 -B scripts/resources.py status
+python3 -B scripts/resources.py verify
 ```
 
-ZIP 指纹见 [SHA256SUMS](dist/SHA256SUMS)。日常读取和研究不需要 Python。
+verify检查完整快照；按需模式用read逐项核对，也可用--library指定单独克隆的相同快照。读取器只读，不写缓存、不安装软件、不调用模型。没有Python时用宿主读取/HTTPS及指纹能力；Python不是研究运行前提。详见[资源说明](skills/invest-research/references/resources.md)。包指纹见[SHA256SUMS](dist/SHA256SUMS)，0.1.0旧包保留，同版本不覆盖不同内容。
 
-本仓库仅提供可移植核心方法与空白模板，不包含原书全文、维护者个人 IPS、资产数据、原始阅读证据或历史备份。书目与材料限制见[来源说明](skills/invest-research/references/sources.md)。尚未指定开源许可证。
-
-维护规则见 [Agents.md](Agents.md)、[PRD](invest-research_PRD_0.1.0.md)、[架构](Tech_Arch.md)与[变更日志](Change_Log.md)。
+维护：[Agents](Agents.md)、[PRD](invest-research_PRD_0.2.0.md)、[架构](Tech_Arch.md)、[日志](Change_Log.md)。尚未指定开源许可证。

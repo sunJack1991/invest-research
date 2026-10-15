@@ -80,5 +80,14 @@
     "undelivered_reasons": [],
     "write_files": false,
     "output_directory": null
+  },
+  "public_resources": {
+    "repository": null,
+    "version": null,
+    "commit": null,
+    "manifest_sha256": null,
+    "mode": null,
+    "resources_used": [],
+    "unavailable_resources": []
   }
 }

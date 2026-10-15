@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "repository": "sunJack1991/invest-resources",
+  "resource_version": "0.1.0",
+  "commit": "8464b992128502bb88a1d6f393ee0e58381625c1",
+  "catalog_sha256": "53807cb30492418825d0b64638761074dda7d6addbc8e7b49a9050e1efcac26c",
+  "manifest_sha256": "bcd407bbd71fb166f07bfa2c25d42a88e218a26329137dca9ab5516d831effe3",
+  "status": "published and verified against the exact user-confirmed 506-file manifest"
+}

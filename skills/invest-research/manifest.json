@@ -2,15 +2,16 @@
   "schema_version": 1,
   "format": "Agent Skills",
   "name": "invest-research",
-  "version": "0.1.0",
+  "version": "0.2.0",
+  "installation_mode": "git",
   "entrypoint": "SKILL.md",
   "git_commit": null,
   "runtime": "instructions-and-text-assets; no required API or SDK; optional Python 3 offline integrity check",
   "files": [
     {
       "path": "SKILL.md",
-      "bytes": 5635,
-      "sha256": "a00ce537a86205c065c143dd58b81243509c180f87eb2896781cf624a8a15648"
+      "bytes": 6361,
+      "sha256": "9d8a7627b09b5cff2d1df14bdfd101bfe84211755c2d22e4bcb8e482b392bdfd"
     },
     {
       "path": "assets/decision.md",
@@ -23,14 +24,24 @@
       "sha256": "a9c45b277e2aaf6b9bd3ddde164d2a03c9c4ee67107ed2492331e0ed3a2f3c7d"
     },
     {
+      "path": "assets/project.json",
+      "bytes": 504,
+      "sha256": "f697ebcdda08146ada49eb2130a285991b1208aaf39f9cb7a6d4e10035db952c"
+    },
+    {
+      "path": "assets/project.md",
+      "bytes": 1366,
+      "sha256": "506881f9304328c57d309e51abc193c23cecc7c89f85c72a33c2628507908281"
+    },
+    {
       "path": "assets/request.json",
       "bytes": 766,
       "sha256": "cc1be600e0e103835e2a48a9dbc5e5d2b7b814c2e6ba47ea6d763af9f874a70f"
     },
     {
       "path": "assets/run.json",
-      "bytes": 1813,
-      "sha256": "5269a9e258000b4272d52e3d5abeedff5c13209e6c20fc182b04ae11c3be2944"
+      "bytes": 2012,
+      "sha256": "acdecd2cd1ea9f46093d1ee553bfd8a84f0c2935535fbff7a64a83dcdc1304eb"
     },
     {
       "path": "assets/summary.md",
@@ -49,8 +60,8 @@
     },
     {
       "path": "references/method.md",
-      "bytes": 9861,
-      "sha256": "2cb9dc53bbe6b43c7ddabfd006de64b9c2619a81baf855fdf3179b452e23775f"
+      "bytes": 9942,
+      "sha256": "a4aac9061c5a4726d331ef6e780bc78fcbdd6de4696c0da28cbc28eda1193359"
     },
     {
       "path": "references/policy.md",
@@ -58,14 +69,34 @@
       "sha256": "c415dba30dc3465a06310cc4d3bedb92593933027416d81f4acb0b00e166e919"
     },
     {
+      "path": "references/resources.md",
+      "bytes": 3855,
+      "sha256": "8094691517afe7e4ae8780a9c5b4b6e7537a47f9715b35ac55b5ed2843898107"
+    },
+    {
       "path": "references/sources.md",
-      "bytes": 3299,
-      "sha256": "a6c08c7bfdb1b80e342bbc8b74652e57be3e2d34bd8d420f96560f31e010d6c8"
+      "bytes": 3414,
+      "sha256": "06ecb420c919da4fd36b0e3db42dc0a36b798594681698098473402ab66484aa"
+    },
+    {
+      "path": "resources.lock.json",
+      "bytes": 427,
+      "sha256": "4b6c9ba0ed2cd36110671a0395eba27ca56a7b075373db7d587e878a7d1f5976"
+    },
+    {
+      "path": "resources/catalog.json",
+      "bytes": 179380,
+      "sha256": "53807cb30492418825d0b64638761074dda7d6addbc8e7b49a9050e1efcac26c"
     },
     {
       "path": "scripts/check_integrity.py",
       "bytes": 1962,
       "sha256": "9c3fd336c3f65b64c68345a4d9287cbbb5a4424ae775646cf4e0d7179eaa69d1"
+    },
+    {
+      "path": "scripts/resources.py",
+      "bytes": 5660,
+      "sha256": "3a4e4ff3538a4a4c7243631e198f43e2c1d1a0ee53bcd84d38dde9a07f309fa9"
     }
   ]
 }
